@@ -11,7 +11,7 @@ import SwiftUI
 struct icloudTodoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          TodoListScreen()
         }
     }
 }

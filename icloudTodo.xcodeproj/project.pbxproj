@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43AC86282A14DECB005139D2 /* icloudTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC86272A14DECB005139D2 /* icloudTodoApp.swift */; };
-		43AC862A2A14DECB005139D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC86292A14DECB005139D2 /* ContentView.swift */; };
+		43AC862A2A14DECB005139D2 /* TodoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC86292A14DECB005139D2 /* TodoListScreen.swift */; };
 		43AC862C2A14DECC005139D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AC862B2A14DECC005139D2 /* Assets.xcassets */; };
 		43AC862F2A14DECC005139D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AC862E2A14DECC005139D2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,9 +16,10 @@
 /* Begin PBXFileReference section */
 		43AC86242A14DECB005139D2 /* icloudTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = icloudTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AC86272A14DECB005139D2 /* icloudTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icloudTodoApp.swift; sourceTree = "<group>"; };
-		43AC86292A14DECB005139D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43AC86292A14DECB005139D2 /* TodoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListScreen.swift; sourceTree = "<group>"; };
 		43AC862B2A14DECC005139D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43AC862E2A14DECC005139D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43AC86352A14DF5A005139D2 /* icloudTodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icloudTodo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,9 @@
 		43AC86262A14DECB005139D2 /* icloudTodo */ = {
 			isa = PBXGroup;
 			children = (
+				43AC86352A14DF5A005139D2 /* icloudTodo.entitlements */,
 				43AC86272A14DECB005139D2 /* icloudTodoApp.swift */,
-				43AC86292A14DECB005139D2 /* ContentView.swift */,
+				43AC86362A14FDAA005139D2 /* Screens */,
 				43AC862B2A14DECC005139D2 /* Assets.xcassets */,
 				43AC862D2A14DECC005139D2 /* Preview Content */,
 			);
@@ -65,6 +67,14 @@
 				43AC862E2A14DECC005139D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43AC86362A14FDAA005139D2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				43AC86292A14DECB005139D2 /* TodoListScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43AC862A2A14DECB005139D2 /* ContentView.swift in Sources */,
+				43AC862A2A14DECB005139D2 /* TodoListScreen.swift in Sources */,
 				43AC86282A14DECB005139D2 /* icloudTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = icloudTodo/icloudTodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"icloudTodo/Preview Content\"";
@@ -293,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = icloudTodo/icloudTodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"icloudTodo/Preview Content\"";
